@@ -1,0 +1,24 @@
+body,
+html {
+    margin: 0;
+}
+
+footer {
+  background-color: rgb(19, 118, 151);
+  max-width: 100vw;  
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.phone-container,
+.email-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contact-icon {
+    max-width: 25px;
+}
