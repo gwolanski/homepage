@@ -23,10 +23,6 @@ header {
 }
 
 .headshot-container {
-    /* position: relative; */
-    /* top: 10%;
-    left: 5%; */
-    /* margin: 50px 50px; */
     z-index: 1;
 }
 
@@ -37,8 +33,6 @@ header {
 
 .name {
     position: relative;
-    /* top: 35%; 
-    left: 27%; */
     transform: translate(5%, -95%);
     color: white;
     font-size: 4rem;
@@ -50,15 +44,12 @@ header {
 }
 
 .about-container {
-    /* position: absolute;
-    top: 5%;
-    left: 42%; */
     margin-top: 20px;
     background-color: white;
-    max-width: 585px;
+    max-width: 615px;
     min-width: 500px;
     max-height: 375px;
-    padding: 20px 20px 20px 60px;
+    padding: 20px 20px 20px 40px;
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
     z-index: 0;
     display: flex;
@@ -132,6 +123,8 @@ section {
 .bottom-project {
     padding: 0 15px 15px 15px;
     line-height: 1.5rem;
+    display: grid;
+    grid-template-rows: 50px 125px;
 }
 
 .top-line {
@@ -139,6 +132,10 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+h2 {
+    font-weight: 500;
 }
 
 .project-link {
@@ -158,7 +155,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 490px;
+  gap: 480px;
 }
 
 .footer-item {
