@@ -27,7 +27,6 @@ header {
 }
 
 .headshot {
-    
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -48,7 +47,7 @@ header {
     background-color: white;
     max-width: 615px;
     min-width: 500px;
-    max-height: 375px;
+    max-height: 450px;
     padding: 20px 20px 20px 40px;
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
     z-index: 0;
@@ -100,7 +99,7 @@ section {
 
 .project {
     display: grid;
-    grid-template-columns: 350px;
+    grid-template-columns: 100%;
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
     background-color: rgba(198, 182, 179, 0.2);
 }
@@ -180,4 +179,76 @@ footer {
 .footer-link-container {
     display: flex;
     gap: 15px;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .header-container {
+        margin-top: 25px;
+        margin-left: 25px;
+        flex-direction: column;
+    }
+
+    .headshot-container {
+        position: absolute;
+        top: 35px;
+        left: 25px;
+        float: left;
+    }
+
+    .headshot {
+        width: 300px;
+    }
+
+    .name {
+        transform: translate(90%, -540%);
+        font-size: 2.5rem;
+    }
+
+    .about-container {
+        /* transform: translate(30%, 15%); */
+        margin-top: 15px;
+        max-width: 500px;
+        /* min-width: 500px; */
+        max-height: auto;
+        font-size: 1rem;
+    }
+    
+    .separator {
+        margin-top: -19.80vw;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(3, 1fr);
+    } 
+
+    .top-project {
+        height: 240px;
+    }
+
+    .bottom-project {
+        grid-template-rows: 50px 155px;
+    }
+
+    footer {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .project-container {
+        grid-template-columns: 250px;
+    } 
+
+    footer {
+        flex-direction: column;
+    }
 }
