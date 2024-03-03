@@ -193,14 +193,14 @@ footer {
     .header-container {
         margin-top: 25px;
         margin-left: 25px;
-        flex-direction: column;
+        align-items: center;
     }
 
     .headshot-container {
-        position: absolute;
-        top: 35px;
-        left: 25px;
+        padding: 1rem;
+        transform: translate(12%, 0%);
         float: left;
+        margin-right: 5px;
     }
 
     .headshot {
@@ -208,17 +208,22 @@ footer {
     }
 
     .name {
-        transform: translate(90%, -540%);
+        transform: translate(5%, -550%);
         font-size: 2.5rem;
     }
 
     .about-container {
-        /* transform: translate(30%, 15%); */
-        margin-top: 15px;
-        max-width: 500px;
-        /* min-width: 500px; */
-        max-height: auto;
+        transform: translate(-25%, 0%);
         font-size: 1rem;
+        display: flex;
+        max-width: 420px;
+        min-width: 300px;
+        max-height: 500px;
+        padding-left: 50px;
+    }
+
+    .about-body {
+        max-width: 400px;
     }
     
     .separator {
