@@ -251,7 +251,7 @@ footer {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 670px) {
     body {
         width: 100%; 
     }
@@ -287,6 +287,10 @@ footer {
     .project-container {
         grid-template-columns: 350px;
     } 
+
+    .project {
+        height: 420px;
+    }
 
     footer {
         flex-direction: column;
