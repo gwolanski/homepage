@@ -42,7 +42,7 @@ header {
     font-weight: 400px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 10px;
-    width: 250px;
+    width: 400px;
     z-index: 2;
 }
 
@@ -197,15 +197,12 @@ footer {
 
     .header-container {
         margin-top: 25px;
-        margin-left: 25px;
         align-items: center;
     }
 
     .headshot-container {
         padding: 1rem;
-        transform: translate(12%, 0%);
         float: left;
-        margin-right: 5px;
     }
 
     .headshot {
@@ -215,13 +212,14 @@ footer {
     .name {
         transform: translate(5%, -550%);
         font-size: 2.5rem;
+        max-width: 250px;
     }
 
     .about-container {
-        transform: translate(-25%, 0%);
+        transform: translate(-10%, 0%);
         font-size: 1rem;
         display: flex;
-        max-width: 420px;
+        max-width: 520px;
         min-width: 300px;
         max-height: 500px;
         padding-left: 50px;
@@ -263,6 +261,15 @@ footer {
         flex-direction: column;
     }
     
+    .headshot-container {
+        transform: none;
+        height: 270px;
+    }
+
+    .name {
+        max-width: 250px;
+    }
+
     .about-container {
         margin: 0;
         max-width: 300px;
